@@ -66,17 +66,3 @@ curl -X POST http://localhost:3000/tasks \
    a good candidate for the Research → Plan → Implement workflow lab.
 
 </details>
-
----
-
-## How the modules use this app
-
-| Module | What you do here |
-| --- | --- |
-| 03 Model selection | Use a big model to *find* the filter bug; smaller to apply the fix |
-| 04 Context optimization | Attach only the 2–3 files needed to fix `filterByMinPriority` |
-| 05 Prompt engineering | Write a precise prompt with stop conditions to fix the test |
-| 06 Workflow design | Research → Plan → Implement the validation for `POST /tasks` |
-| 07 Deterministic controls | Add ESLint + tests + fix the ReDoS as guardrails |
-| 08 Advanced controls | Add `copilot-instructions.md` / `AGENTS.md` and reuse it |
-| 10 Capstone | Combine all five levers end-to-end |
