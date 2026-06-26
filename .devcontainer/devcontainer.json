@@ -1,0 +1,36 @@
+{
+  "name": "Agent Quality & Token Optimization Workshop",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "github.copilot.chat.codeGeneration.useInstructionFiles": true
+      }
+    }
+  },
+
+  "workspaceFolder": "/workspaces/sample-app",
+  "postCreateCommand": "cd sample-app && npm ci",
+  "postStartCommand": "node -v && npm -v",
+
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "TaskMaster API",
+      "onAutoForward": "notify"
+    }
+  },
+
+  "remoteUser": "node",
+  "updateRemoteUserUID": true
+}
