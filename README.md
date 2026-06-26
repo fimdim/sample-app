@@ -9,7 +9,6 @@ A tiny **TypeScript + Express** task API. It works well enough to run, but it co
 ## Run it
 
 ```bash
-cd sample-app
 npm install
 npm run build      # compiles TypeScript -> dist/
 npm test           # runs Jest (one test FAILS on purpose)
